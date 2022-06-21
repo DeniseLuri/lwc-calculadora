@@ -1,0 +1,26 @@
+<template>
+	<div class= "slds-card">
+		<h1 id="Titulo"> Calculadora</h1>
+	
+		<div>
+		 <lightning-input type="text" label="Número 1" onchange={mudouN1} ></lightning-input>
+		 <lightning-input type="text" label="Número 2" onchange={mudouN2}></lightning-input>
+		</div>
+
+		<div>
+		<lightning-button variant="brand" label="+"  onclick={soma} class="slds-m-left_x-small"></lightning-button>
+		<lightning-button variant="destructive-text" label="-"  onclick={sub} class="slds-m-left_x-small"></lightning-button>
+		<lightning-button variant="brand-outline" label="/"  onclick={div} class="slds-m-left_x-small"></lightning-button>
+		<lightning-button variant="brand" label="*"  onclick={mult} class="slds-m-left_x-small"></lightning-button>
+		<lightning-button variant="Destructive" label="C"  onclick={limpa} class="slds-m-left_x-small"></lightning-button>
+		</div>
+		
+		<br></br>		
+		
+		<div>
+		<span id="resultado"> {resultado} </span>
+		</div>
+		
+		</div>
+
+</template>
